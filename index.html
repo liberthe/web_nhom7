@@ -5,99 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Trang chủ - Mỹ phẩm Hàn Nhật</title>
   <!-- Liên kết CSS bên ngoài nếu có -->
-  <link rel="stylesheet" href="css/style.css">
-  <style>
-    /* Reset và font cơ bản */
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Arial', sans-serif; background: #f4f4f4; color: #333; }
-    .container { width: 90%; max-width: 1200px; margin: auto; }
-    a { text-decoration: none; color: inherit; }
-    
-    /* Header */
-    header { background: #fff; padding: 10px 0; border-bottom: 1px solid #ddd; }
-    .header-top { display: flex; align-items: center; justify-content: space-between; }
-    .logo img { height: 50px; }
-    .search { flex: 1; margin: 0 20px; }
-    .search input { width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
-    .user-tools a img { height: 30px; margin-left: 15px; }
-    nav { margin-top: 10px; }
-    nav ul { list-style: none; display: flex; justify-content: center; }
-    nav ul li { margin: 0 15px; }
-    nav ul li a { font-weight: bold; }
-    
-    /* Banner */
-    .banner { position: relative; }
-    .banner img { width: 100%; height: auto; display: block; object-fit: cover; }
-    .banner .overlay {
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0,0,0,0.3);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #fff;
-      font-size: 2em;
-      font-weight: bold;
-    }
-    
-    /* New Banner (sẽ chuyển slider sau này) */
-    .sub-banner { margin: 40px 0; position: relative; }
-    .sub-banner img { width: 100%; height: 300px; display: block; object-fit: cover; }
-    
-    /* Sections */
-    section { padding: 40px 0; }
-    section h2 { text-align: center; margin-bottom: 20px; font-size: 1.8em; }
-    
-    /* Categories */
-    .categories .category-list {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-    }
-    .category-item {
-      width: 30%;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-    .category-item img {
-      width: 100%;
-      height: 200px;            /* Chiều cao cố định cho ảnh danh mục */
-      border-radius: 8px;
-      transition: transform 0.3s;
-      object-fit: cover;
-    }
-    .category-item:hover img { transform: scale(1.05); }
-    .category-item p { margin-top: 10px; font-size: 1.1em; }
-    
-    /* Featured Products */
-    .featured-products .product-list {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-    .product-item {
-      width: 23%;
-      background: #fff;
-      padding: 15px;
-      margin-bottom: 20px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      border-radius: 8px;
-      text-align: center;
-      transition: transform 0.3s;
-    }
-    .product-item:hover { transform: translateY(-5px); }
-    .product-item img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      object-fit: cover;
-    }
-    .product-item h3 { margin: 10px 0; font-size: 1.2em; }
-    .product-item p { color: #e74c3c; font-weight: bold; }
-    
-    /* Footer */
-    footer { background: #333; color: #fff; text-align: center; padding: 20px 0; margin-top: 40px; }
-  </style>
+  <link rel="stylesheet" href="mipham-style.css">
+  
 </head>
 <body>
   <!-- Header -->
@@ -123,6 +32,7 @@
         <ul>
           <li><a href="index.html">Trang chủ</a></li>
           <li><a href="category.html">Danh mục</a></li>
+          <li><a href="news.html">Tin tức</a></li>
           <li><a href="contact.html">Liên hệ</a></li>
         </ul>
       </nav>
@@ -132,13 +42,13 @@
   <!-- Banner chính -->
   <section class="banner">
     <!-- Ảnh banner online từ Unsplash -->
-    <img src="https://images.unsplash.com/photo-1575686717697-f43bd36e74c2?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Banner chính">
+    <img src="https://img.freepik.com/free-vector/beauty-skin-care-background_52683-728.jpg?t=st=1741625712~exp=1741629312~hmac=e2d9359236834e75b4a9014897af8f48294902afd82e56bade566cd6055a4e27&w=1380" alt="Banner chính">
     <!--<div class="overlay">Chào mừng đến với Mỹ phẩm Hàn Nhật</div>-->
   </section>
 
   <!-- New Banner (sẽ chuyển slider sau này) -->
   <section class="sub-banner">
-    <img src="https://source.unsplash.com/1200x300/?cosmetics,beauty" alt="Banner mới">
+    <img src="https://cdn.pixabay.com/photo/2020/04/02/05/19/beauty-4993470_640.jpg" alt="Banner mới">
   </section>
 
   <!-- Main Content -->
@@ -176,7 +86,7 @@
       <h2>Sản phẩm nổi bật</h2>
       <div class="product-list">
         <div class="product-item">
-          <a href="product-detail.html">
+          <a href="product-detail1.html">
             <!-- Ảnh sản phẩm 1 online -->
             <img src="https://i.pinimg.com/736x/aa/37/8b/aa378b743f18b7fe2d319f560cf559c0.jpg" alt="Sản phẩm 1">
             <h3>Kem dưỡng ẩm Torriden</h3>
@@ -206,6 +116,35 @@
             <h3>Serum Rau má HA Madagascar Centella</h3>
           </a>
           <p>Giá: 150,000₫</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+    <!-- Tin tức mới -->
+    <section class="news-section">
+      <h2>Tin tức mới</h2>
+      <div class="news-list">
+        <div class="news-item">
+          <a href="news-detail.html?id=1">
+            <img src="https://cdn.stocksnap.io/img-thumbs/960w/woman-skin_6FSHTMMBFY.jpg" alt="Tin 1">
+            <h3>6 bước chăm sóc da cơ bản</h3>
+          </a>
+          <p>Một quy trình skincare đơn giản, hiệu quả cho những người mới bắt đầu.</p>
+        </div>
+        <div class="news-item">
+          <a href="news-detail1.html">
+            <img src="https://media.istockphoto.com/id/1319827804/vi/anh/ch%C4%83m-s%C3%B3c-da-xanh-h%E1%BB%AFu-c%C6%A1-t%E1%BB%B1-nhi%C3%AAn.jpg?s=1024x1024&w=is&k=20&c=0M1zY1UZM1Fo_nkcHo-0OPsJtpgSuGBieiEg_Vjn08o=" alt="Tin 2">
+            <h3>5 Cách Sử Dụng Serum Để Dưỡng Da Hiệu Quả</h3>
+          </a>
+          <p>Cách dùng Serum cho làn da khỏe đẹp mỗi ngày.</p>
+        </div>
+        <div class="news-item">
+          <a href="news-detail.html?id=3">
+            <img src="https://images.unsplash.com/photo-1598121496652-223b73a810fa?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGxpcCUyMHN0aWNrfGVufDB8fDB8fHww" alt="Tin 3">
+            <h3>Cách chọn son môi phù hợp</h3>
+          </a>
+          <p>Mẹo chọn màu son, chất son theo tone da và phong cách cá nhân.</p>
         </div>
       </div>
     </section>

@@ -1,124 +1,204 @@
-/* ----- 1. Thiết lập chung ----- */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
+/* Reset và font cơ bản */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Arial', sans-serif; background: #f4f4f4; color: #333; }
+.container { width: 90%; max-width: 1200px; margin: auto; }
+a { text-decoration: none; color: inherit; }
+
+/* Header */
+header { background: #fff; padding: 10px 0; border-bottom: 1px solid #ddd; }
+.header-top { display: flex; align-items: center; justify-content: space-between; }
+.logo img { height: 50px; }
+.search { flex: 1; margin: 0 20px; }
+.search input { width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
+.user-tools a img { height: 30px; margin-left: 15px; }
+nav { margin-top: 10px; }
+nav ul { list-style: none; display: flex; justify-content: center; }
+nav ul li { margin: 0 15px; }
+nav ul li a { font-weight: bold; }
+
+/* Banner */
+.banner { position: relative; }
+.banner img { width: 100%; height: 600px; display: block; object-fit: cover; }
+.banner .overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 2em;
+  font-weight: bold;
 }
 
-body {
-    background: linear-gradient(to right, #fce4ec, #f8bbd0); /* Gradient pastel hồng */
-    color: #444;
-}
+/* New Banner (sẽ chuyển slider sau này) */
+.sub-banner { margin: 40px 20px; position: relative; }
+.sub-banner img { width: 100%; height: 300px; display: block; object-fit: cover; }
 
-/* ----- 2. Màu sắc hài hòa cho chữ ----- */
-h2 {
-    color: #d81b60; /* Màu hồng đậm */
-}
+/* Sections */
+section { padding: 40px 0; }
+section h2 { text-align: center; margin-bottom: 20px; font-size: 1.8em; }
 
-a {
-    text-decoration: none;
-    color: #d81b60; /* Màu chủ đạo */
-    transition: color 0.3s;
+/* Categories */
+.categories .category-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
-
-a:hover {
-    color: #880e4f; /* Màu tối hơn khi hover */
+.category-item {
+  width: 30%;
+  margin-bottom: 20px;
+  text-align: center;
 }
+.category-item img {
+  width: 100%;
+  height: 200px;            /* Chiều cao cố định cho ảnh danh mục */
+  border-radius: 8px;
+  transition: transform 0.3s;
+  object-fit: cover;
+}
+.category-item:hover img { transform: scale(1.05); }
+.category-item p { margin-top: 10px; font-size: 1.1em; }
 
-/* ----- 3. Thiết kế hover cho Footer ----- */
-footer {
-    background: #333;
-    color: white;
+ /* Categories Section */
+ .categories { padding: 40px 0; }
+ .categories h1 { text-align: center; margin-bottom: 20px; font-size: 2em; }
+ .category-grid { display: flex; flex-wrap: wrap; justify-content: space-around; gap: 20px; }
+ .category-card {
+   width: 30%;
+   background: #fff;
+   border-radius: 8px;
+   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+   overflow: hidden;
+   transition: transform 0.3s;
+   text-align: center;
+ }
+ .category-card:hover { transform: translateY(-5px); }
+ .category-card img {
+   width: 100%;
+   height: 200px; /* Chiều cao cố định cho đồng nhất */
+   object-fit: cover;
+   display: block;
+ }
+ .category-card h3 {
+   padding: 15px 0;
+   font-size: 1.2em;
+   background: #f9f9f9;
+ }
+ 
+ /* Contact Section */
+ .contact-section { padding: 40px 0; }
+ .contact-section h1 { text-align: center; margin-bottom: 30px; font-size: 2em; }
+ .contact-wrapper { display: flex; gap: 4%; flex-wrap: wrap; }
+ .contact-info, .contact-form { width: 48%; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+ .contact-info h2, .contact-form h2 { margin-bottom: 15px; }
+ .contact-info p { margin: 10px 0; line-height: 1.6; }
+ .contact-form form { display: flex; flex-direction: column; gap: 15px; }
+ .contact-form input, .contact-form textarea {
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   font-size: 1em;
+ }
+ .contact-form button {
+   padding: 10px;
+   border: none;
+   background: #e74c3c;
+   color: #fff;
+   border-radius: 4px;
+   cursor: pointer;
+   font-size: 1em;
+ }
+ .contact-form button:hover { background: #c0392b; }
+
+ /*News*/
+ .news { padding: 40px 0; }
+ .news h1 { text-align: center; margin-bottom: 20px; font-size: 2em; }
+ .news h2 { text-align: center; margin-top: 5px; margin-bottom: 10px; font-size: 1.2em;}
+ .news-grid { display: flex; flex-wrap: wrap; justify-content: space-around; gap: 20px; }
+ .news-card {
+   width: 30%;
+   background: #fff;
+   border-radius: 8px;
+   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+   overflow: hidden;
+   transition: transform 0.3s;
+
+ }
+ .news-card:hover { transform: translateY(5px); }
+ .news-card img {
+   width: 100%;
+   height: 200px; /* Chiều cao cố định cho đồng nhất */
+   object-fit: cover;
+   display: block;
+ }
+ .news-card p {
+  
+   font-size: 1em;
+   
+   text-align: justify;
+   margin: 20px;
+ }
+ 
+.news-card a {
+    text-decoration: underline;
     text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
-    transition: background 0.3s;
+    color: rgb(90, 90, 238);
+    font-size: 1em;
+    margin: 0 20px 40px;
 }
 
-footer:hover {
-    background: #444; /* Khi hover, nền sáng hơn */
-}
 
-footer p {
-    font-size: 14px;
-    opacity: 0.8;
+/* Featured Products */
+.featured-products .product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-
-footer p:hover {
-    opacity: 1; /* Làm rõ hơn khi hover */
-}
-/* Sản phẩm */
 .product-item {
-    width: 23%;
-    background: #fff;
-    padding: 15px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-    overflow: hidden;
-    position: relative;
+  width: 23%;
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s;
 }
+.product-item:hover { transform: translateY(-5px); }
 .product-item img {
-    transition: transform 0.3s ease-in-out;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
 }
+.product-item h3 { margin: 10px 0; font-size: 1.2em; }
+.product-item p { color: #e74c3c; font-weight: bold; }
 
-.product-item:hover img {
-    transform: scale(1.05);
+/* News Section */
+.news-section .news-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
+.news-item {
+  width: 32%;
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+.news-item:hover { transform: translateY(-5px); }
+.news-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.news-item h3 { margin: 10px 0; font-size: 1.1em; }
+.news-item p { font-size: 0.9em; line-height: 1.4; }
 
-
-/* Hiệu ứng hover: Nổi lên + bóng đẹp */
-.product-item:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-/* Hiệu ứng hover làm mờ nền */
-.product-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    transition: opacity 0.3s;
-}
-
-.product-item:hover img {
-    opacity: 0.8;
-}
-
-/* Hiệu ứng chữ nổi bật hơn khi hover */
-.product-item h3 {
-    font-size: 1.2em;
-    transition: color 0.3s;
-}
-
-.product-item:hover h3 {
-    color: #d81b60; /* Đổi sang màu hồng nổi bật */
-}
-/* Container phân trang */
-.pagination {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-}
-
-.pagination a {
-    display: inline-block;
-    padding: 10px 15px;
-    margin: 0 5px;
-    background: #fff;
-    color: #d81b60;
-    font-weight: bold;
-    border-radius: 5px;
-    border: 1px solid #d81b60;
-    transition: all 0.3s;
-}
-
-/* Hover và trang hiện tại */
-.pagination a:hover,
-.pagination a.active {
-    background: #d81b60;
-    color: white;
-}
+/* Footer */
+footer { background: #333; color: #fff; text-align: center; padding: 20px 0; margin: 40px 0 0; } 

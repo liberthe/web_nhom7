@@ -4,54 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chi Tiết Sản Phẩm</title>
+    <link rel="stylesheet" href="mipham-style.css">
     <style>
-        <img src="2.png" alt="Logo" style="height: 50px; margin-left: 20px;">
-        <h1>Shop Mỹ Phẩm Hàn Quốc</h1>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-        }
-        header {
-            background-color: #5ec59f;
-            color: rgb(250, 250, 250);
-            text-align: center;
-            padding: 20px 0;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 36px;
-        }
-        nav {
-            background-color: #333;
-            overflow: hidden;
-        }
-        nav a {
-            color: white;
-            padding: 14px 20px;
-            display: inline-block;
-            text-decoration: none;
-            text-align: center;
-        }
-        nav a:hover {
-            background-color: #575757;
-        }
+       
+      
+ 
         .product-detail {
             display: flex;
             justify-content: space-between;
             margin: 20px;
         }
         .product-images {
-            width: 50%;
+            width: 35%;
         }
         .product-images img {
-            width: 100%;
+            width: 60%;
             border-radius: 10px;
-            margin-bottom: 10px;
+            margin: 20px 200px;
         }
         .product-info {
             width: 45%;
+            margin: 20px 200px;
         }
         .product-info h2 {
             font-size: 28px;
@@ -105,41 +78,50 @@
             width: 100%;
             border-radius: 10px;
         }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
+     
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Shop Mỹ Phẩm Hàn Quốc</h1>
-    </header>
-
-    <nav>
-        <a href="#">Trang Chủ</a>
-        <a href="#">Sản Phẩm</a>
-        <a href="#">Giới Thiệu</a>
-        <a href="#">Liên Hệ</a>
-    </nav>
-
+        <div class="container">
+          <div class="header-top">
+            <div class="logo">
+              <a href="index.html">
+                <!-- Logo online: sử dụng placeholder -->
+                <img src="https://img.pikbest.com/png-images/cosmetic-and-skincare-brand-logo-graphic-element_1482071.png!f305cw" alt="Logo">
+              </a>
+            </div>
+            <div class="search">
+              <input type="text" placeholder="Tìm kiếm sản phẩm...">
+            </div>
+            <div class="user-tools">
+              <!-- Icon giỏ hàng & tài khoản -->
+              <a href="#"><img src="https://cdn0.iconfinder.com/data/icons/typicons-2/24/shopping-cart-64.png" alt="Giỏ hàng"></a>
+              <a href="#"><img src="https://cdn4.iconfinder.com/data/icons/glyphs/24/icons_user-256.png" alt="Tài khoản"></a>
+            </div>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="index.html">Trang chủ</a></li>
+              <li><a href="category.html">Danh mục</a></li>
+              <li><a href="news.html">Tin tức</a></li>
+              <li><a href="contact.html">Liên hệ</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
     <div class="product-detail">
        
         <div class="product-images">
-            <img src="https://down-vn.img.susercontent.com/file/sg-11134207-7rdy8-m09qptfc9j115f" alt="Mặt nạ đất sét Hàn Quốc">
-            <img src="https://bizweb.dktcdn.net/100/439/842/products/476312106-605360405598042-2925600046250066655-n.jpg?v=1739071471137" alt="kem chống nắng Hàn Quốc 2">
+            <img src="https://i.pinimg.com/736x/aa/37/8b/aa378b743f18b7fe2d319f560cf559c0.jpg" alt="Kem dưỡng ẩm">
+            <!--img src="https://www.boshop.vn/uploads/2023/09/22/650d518bd1511-kem-duong-am-torriden-dive-in-soothing-cream-100ml-boshop-1.jpg" alt="kem dưỡng ẩm Hàn Quốc 2"-->
         </div>
 
         <div class="product-info">
-            <h2>Serum Dưỡng Da Hàn Quốc</h2>
-            <p class="price">500.000 VNĐ</p>
-            <p><strong>Mô tả chi tiết:</strong> Serum dưỡng da giúp làm sáng và mịn da, cung cấp độ ẩm và nuôi dưỡng da từ sâu bên trong.</p>
+            <h2>Kem Dưỡng Ẩm Torriden</h2>
+            <p class="price">200.000 VNĐ</p>
+            <p><strong>Mô tả chi tiết:</strong> Kem dưỡng da giúp làm sáng và mịn da, cung cấp độ ẩm và nuôi dưỡng da từ sâu bên trong.</p>
 
             <ul>
                 <li><strong>Thành phần:</strong> Vitamin C, Hyaluronic Acid, Niacinamide.</li>
@@ -168,10 +150,9 @@
             <p class="price">300.000 VNĐ</p>
         </div>
     </div>
-
-    <footer>
-        <p>© 2025 Shop Mỹ Phẩm Hàn Quốc - Tất cả quyền được bảo vệ</p>
-    </footer>
-
+<footer>
+    <p>&copy; 2025 Mỹ phẩm Hàn Nhật. All rights reserved.</p>
+  </footer>
+  
 </body>
 </html>
