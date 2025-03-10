@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Tiết Sản Phẩm</title>
+    <style>
+        <img src="2.png" alt="Logo" style="height: 50px; margin-left: 20px;">
+        <h1>Shop Mỹ Phẩm Hàn Quốc</h1>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #5ec59f;
+            color: rgb(250, 250, 250);
+            text-align: center;
+            padding: 20px 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            display: inline-block;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .product-detail {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+        .product-images {
+            width: 50%;
+        }
+        .product-images img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .product-info {
+            width: 45%;
+        }
+        .product-info h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        .product-info .price {
+            font-size: 24px;
+            color: #ff6f61;
+            margin-bottom: 20px;
+        }
+        .product-info p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .product-info ul {
+            list-style: none;
+            padding: 0;
+        }
+        .product-info ul li {
+            margin-bottom: 10px;
+        }
+        .product-info button {
+            background-color: #ff6f61;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .product-info button:hover {
+            background-color: #e35d4e;
+        }
+        .related-products {
+            margin: 20px;
+            text-align: center;
+        }
+        .related-products h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .related-products .related-item {
+            display: inline-block;
+            width: 200px;
+            margin: 10px;
+            text-align: center;
+        }
+        .related-products .related-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Shop Mỹ Phẩm Hàn Quốc</h1>
+    </header>
+
+    <nav>
+        <a href="#">Trang Chủ</a>
+        <a href="#">Sản Phẩm</a>
+        <a href="#">Giới Thiệu</a>
+        <a href="#">Liên Hệ</a>
+    </nav>
+
+    <div class="product-detail">
+       
+        <div class="product-images">
+            <img src="https://down-vn.img.susercontent.com/file/sg-11134207-7rdy8-m09qptfc9j115f" alt="Mặt nạ đất sét Hàn Quốc">
+            <img src="https://bizweb.dktcdn.net/100/439/842/products/476312106-605360405598042-2925600046250066655-n.jpg?v=1739071471137" alt="kem chống nắng Hàn Quốc 2">
+        </div>
+
+        <div class="product-info">
+            <h2>Serum Dưỡng Da Hàn Quốc</h2>
+            <p class="price">500.000 VNĐ</p>
+            <p><strong>Mô tả chi tiết:</strong> Serum dưỡng da giúp làm sáng và mịn da, cung cấp độ ẩm và nuôi dưỡng da từ sâu bên trong.</p>
+
+            <ul>
+                <li><strong>Thành phần:</strong> Vitamin C, Hyaluronic Acid, Niacinamide.</li>
+                <li><strong>Công dụng:</strong> Làm sáng da, dưỡng ẩm, giảm thâm mụn.</li>
+            </ul>
+
+            <button>Thêm vào giỏ hàng</button>
+        </div>
+    </div>
+
+    <div class="related-products">
+        <h3>Sản phẩm liên quan</h3>
+        <div class="related-item">
+            <img src="https://product.hstatic.net/200000282419/product/__-02_ecb8a8fd3be24955bc1f5ae44609abc0.jpg" alt="Sản phẩm 1">
+            <p>Sữa Rửa Mặt</p>
+            <p class="price">250.000 VNĐ</p>
+        </div>
+        <div class="related-item">
+            <img src="https://down-vn.img.susercontent.com/file/sg-11134207-7rdx2-m1hu116vwtdrd2" alt="Sản phẩm 2">
+            <p>Kem Dưỡng Da Ban Đêm</p>
+            <p class="price">350.000 VNĐ</p>
+        </div>
+        <div class="related-item">
+            <img src="https://image.hsv-tech.io/bbx/common/0793fa6e-bbab-4e4d-8c86-823105e8c3b6.webp" alt="Sản phẩm 3">
+            <p>Mặt Nạ Ngủ</p>
+            <p class="price">300.000 VNĐ</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Shop Mỹ Phẩm Hàn Quốc - Tất cả quyền được bảo vệ</p>
+    </footer>
+
+</body>
+</html>
