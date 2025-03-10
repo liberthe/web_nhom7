@@ -1,0 +1,124 @@
+/* ----- 1. Thiết lập chung ----- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #fce4ec, #f8bbd0); /* Gradient pastel hồng */
+    color: #444;
+}
+
+/* ----- 2. Màu sắc hài hòa cho chữ ----- */
+h2 {
+    color: #d81b60; /* Màu hồng đậm */
+}
+
+a {
+    text-decoration: none;
+    color: #d81b60; /* Màu chủ đạo */
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #880e4f; /* Màu tối hơn khi hover */
+}
+
+/* ----- 3. Thiết kế hover cho Footer ----- */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    transition: background 0.3s;
+}
+
+footer:hover {
+    background: #444; /* Khi hover, nền sáng hơn */
+}
+
+footer p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+footer p:hover {
+    opacity: 1; /* Làm rõ hơn khi hover */
+}
+/* Sản phẩm */
+.product-item {
+    width: 23%;
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    position: relative;
+}
+.product-item img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-item:hover img {
+    transform: scale(1.05);
+}
+
+
+/* Hiệu ứng hover: Nổi lên + bóng đẹp */
+.product-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Hiệu ứng hover làm mờ nền */
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: opacity 0.3s;
+}
+
+.product-item:hover img {
+    opacity: 0.8;
+}
+
+/* Hiệu ứng chữ nổi bật hơn khi hover */
+.product-item h3 {
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.product-item:hover h3 {
+    color: #d81b60; /* Đổi sang màu hồng nổi bật */
+}
+/* Container phân trang */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 0 5px;
+    background: #fff;
+    color: #d81b60;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid #d81b60;
+    transition: all 0.3s;
+}
+
+/* Hover và trang hiện tại */
+.pagination a:hover,
+.pagination a.active {
+    background: #d81b60;
+    color: white;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Danh mục - Mỹ phẩm Hàn Nhật</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Reset & cơ bản */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; background: #f4f4f4; color: #333; }
+    .container { width: 90%; max-width: 1200px; margin: auto; }
+    a { text-decoration: none; color: inherit; }
+    
+    /* Header */
+    header { background: #fff; padding: 10px 0; border-bottom: 1px solid #ddd; }
+    .header-top { display: flex; align-items: center; justify-content: space-between; }
+    .logo img { height: 50px; }
+    nav { margin-top: 10px; }
+    nav ul { list-style: none; display: flex; justify-content: center; }
+    nav ul li { margin: 0 15px; }
+    nav ul li a { font-weight: bold; }
+    
+    /* Categories Section */
+    .categories { padding: 40px 0; }
+    .categories h1 { text-align: center; margin-bottom: 20px; font-size: 2em; }
+    .category-grid { display: flex; flex-wrap: wrap; justify-content: space-around; gap: 20px; }
+    .category-card {
+      width: 30%;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+      text-align: center;
+    }
+    .category-card:hover { transform: translateY(-5px); }
+    .category-card img {
+      width: 100%;
+      height: 200px; /* Chiều cao cố định cho đồng nhất */
+      object-fit: cover;
+      display: block;
+    }
+    .category-card h3 {
+      padding: 15px 0;
+      font-size: 1.2em;
+      background: #f9f9f9;
+    }
+    
+    /* Footer */
+    footer { background: #333; color: #fff; text-align: center; padding: 20px 0; margin-top: 40px; }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="header-top">
+        <div class="logo">
+          <a href="index.html">
+            <!-- Logo online: bạn có thể thay bằng link ảnh khác -->
+            <img src="https://via.placeholder.com/150x50?text=Logo" alt="Logo">
+          </a>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="category.html">Danh mục</a></li>
+          <li><a href="contact.html">Liên hệ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content: Danh mục sản phẩm -->
+  <main class="container">
+    <section class="categories">
+      <h1>Danh Mục Sản Phẩm</h1>
+      <div class="category-grid">
+        <!-- Card 1: Kem dưỡng -->
+        <div class="category-card">
+          <a href="products.html?cat=kemduong">
+            <img src="https://source.unsplash.com/800x600/?skincare" alt="Kem dưỡng">
+            <h3>Kem dưỡng</h3>
+          </a>
+        </div>
+        <!-- Card 2: Son môi -->
+        <div class="category-card">
+          <a href="products.html?cat=sonmoi">
+            <img src="https://source.unsplash.com/800x600/?lipstick" alt="Son môi">
+            <h3>Son môi</h3>
+          </a>
+        </div>
+        <!-- Card 3: Toner (đã thay từ Nước hoa) -->
+        <div class="category-card">
+          <a href="products.html?cat=toner">
+            <img src="https://source.unsplash.com/800x600/?toner,skincare" alt="Toner">
+            <h3>Toner</h3>
+          </a>
+        </div>
+        <!-- Thêm các danh mục khác nếu cần -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Mỹ phẩm Hàn Nhật. All rights reserved.</p>
+  </footer>
+</body>
+</html>
